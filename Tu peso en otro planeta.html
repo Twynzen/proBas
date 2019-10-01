@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tu peso en otro planeta</title>
+
+
+  </head>
+
+  <body>
+    <h1> ¿Cuanto pesa Alejandrita en otro planeta?</h1>
+    <p>En la tierra pesas diferente a Jupiter o Marte</p>
+    <script>
+      var usuario = prompt("Cual es tu peso Alejandrita?");
+      var planeta = parseInt(prompt("Elija un planeta.\n 1 es Marte, 2 es Jupiter"));
+      var peso = parseInt(usuario);
+      var Tierra = 9.8;
+      var Marte = 3.7;
+      var Jupiter = 24.8;
+      var pesojupiter;
+      var pesomarte;
+      var pesofinal;
+      if(planeta == 1){
+        pesomarte = peso * Marte / Tierra;
+        pesomarte = pesomarte.toFixed(2);
+        document.write("Tu peso en marte es: "+ pesomarte + " kilos\n");
+      }else if(planeta == 2){
+        pesojupiter = peso * Jupiter / Tierra;
+        pesojupiter = pesojupiter.toFixed(2);
+        document.write(" Tu peso en Jupiter es: "+ pesojupiter + " kilos");
+      }else{
+        document.write("QUE SOLO 1 O 2 BABOSO");
+      }
+    </script>
+  </body>
+
+
+</html>
